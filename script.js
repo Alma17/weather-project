@@ -14,7 +14,9 @@ function showCity(response){
   let currentCity = document.querySelector("#card-city");
   currentCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector("#temp-value");
-  currentTemp.innerHTML = Math.round(response.data.main.temp);  
+  currentTemp.innerHTML = Math.round(response.data.main.temp);
+
+  
 }
 
 function showPosition(position){
@@ -26,6 +28,8 @@ function getPosition(event){
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   }
+
+
 }
 
 let geoButton = document.querySelector("#geo-btn");
@@ -33,6 +37,8 @@ geoButton.addEventListener("click", getPosition);
 
 let form = document.querySelector("form");
 form.addEventListener("submit",searchCity);
+
+
 
 let now = new Date();
 
