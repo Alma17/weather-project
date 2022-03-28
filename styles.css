@@ -1,7 +1,18 @@
 h1 {
     color: blueviolet;
     padding: 0 20px;
-    text-align: left;
-    opacity: 0.9;
-    background-color: blanchedalmond;
+    margin: auto;
+    text-align:center;
+    opacity: 1.9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 30px;
+}
+
+.cities {
+    text-align: center;
+}
+
+.icons {
+    padding: 0 auto;
+    text-align: center;
 }

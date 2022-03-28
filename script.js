@@ -14,10 +14,14 @@ function showCity(response){
   let currentCity = document.querySelector("#card-city");
   currentCity.innerHTML = response.data.name;
   let currentTemp = document.querySelector("#temp-value");
-  currentTemp.innerHTML = Math.round(response.data.main.temp);
-
-  
+  currentTemp.innerHTML = Math.round(response.data.main.temp); 
+  let humidity = document.querySelector("#humidity-value");
+  humidity.innerHTML = (response.data.main.humidity) + "%" ; 
+  let wind = document.querySelector("#wind-value");
+  wind.innerHTML = Math.round(response.data.wind.speed); 
 }
+
+
 
 function showPosition(position){
 console.log(position);
